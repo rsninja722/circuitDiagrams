@@ -1,0 +1,84 @@
+html {
+    background-color: var(--back);
+    color: var(--text);
+}
+
+svg {
+    stroke: var(--text);
+    fill: var(--text);       
+}
+
+#selected {
+    color: var(--bold);
+}
+
+#editor-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.navBar {
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    backdrop-filter: blur(6px);
+    background-color: #090f1677;
+    border: 1px solid var(--text);
+    display: flex;
+    height: 100px;
+}
+
+.navBar > div {
+    flex: 0 0 0;
+}
+
+.navBar table {
+    width: 100%;
+    flex: 1;
+}
+
+.navBar tbody {
+    width: 100%;
+}
+
+.navBar td {
+    padding: 0.5em;
+    width: 8%;
+    vertical-align: top;
+    color: var(--dots);
+}
+.navBar td span {
+    color: var(--text);
+}
+.navBar td div {
+    width: 90%;
+}
+.navBar td svg {
+    width: 50px;
+    height: fit-content;
+}
+
+:root {
+    --text: #c7d6ff;
+    --line-height: normal;
+    --title: #6d86ff;
+    --bold: #47f3a4;
+    --pre: #e6c07b;
+    --summary: #454bff;
+    --back: #090f16;
+    --math: #41f0c1;
+    --space: 0px;
+    --code: #08172a;
+    --table: #040609;
+    --dots: #2c508e;
+    font-family: Helvetica,Arial,sans-serif;
+    letter-spacing: normal;
+    word-spacing: norma;
+}
